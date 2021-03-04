@@ -1,0 +1,47 @@
+{
+  "name": "RiskManagement",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": {
+    "type": "git",
+    "url": "<Add your repository here>"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/approuter": "^9.3.0",
+    "@sap/cds": "^4",
+    "@sap/xsenv": "^3.1.0",
+    "@sap/xssec": "^3.1.2",
+    "express": "^4",
+    "hdb": "^0.18.2",
+    "passport": "^0.4.1"
+  },
+  "devDependencies": {
+    "@sap/ux-specification": "^1.84.4",
+    "sqlite3": "^5"
+  },
+  "scripts": {
+    "start": "cds run"
+  },
+  "sapux": [
+    "app/risks"
+  ],
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sql"
+      },
+      "uaa": {
+        "kind": "xsuaa",
+        "credentials": {}
+      }
+    },
+    "hana": {
+      "deploy-format": "hdbtable"
+    }
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": ""
+}
