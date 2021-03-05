@@ -7,8 +7,8 @@ general:
 stages:
   productionDeployment:
     cfTargets:
-    - org: '<a064614atrial>'
-      space: '<dev>'
-      appName: '<RiskManagement>'
-      apiEndpoint: '<https://api.cf.eu10.hana.ondemand.com>'
-      credentialsId: '<cfdeploy>'
+    - org: 'a064614atrial'
+      space: 'dev'
+      appName: 'RiskManagement'
+      apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
+      credentialsId: 'cfdeploy'
